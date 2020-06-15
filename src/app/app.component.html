@@ -1,0 +1,14 @@
+<h1>Record Stream</h1>
+
+<br />
+<br />
+
+<video class="videoElement" #video autoplay controls></video>
+<br />
+<button *ngIf="!isRecording" (click)="startRecording()">
+  Start Recording
+</button>
+<button *ngIf="isRecording" (click)="stopRecording()">
+  Stop Recording
+</button>
+<br /><br /><br />
